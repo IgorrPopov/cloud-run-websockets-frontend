@@ -38,7 +38,7 @@ class AppComponent {
       );
     });
 
-    this.chatService.getNewMessage().subscribe((userId: string) => {
+    this.chatService.userLeft().subscribe((userId: string) => {
       const message = `=> User has left the session! %c (id: ${userId})`;
 
       console.log(
