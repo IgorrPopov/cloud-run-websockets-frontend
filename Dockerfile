@@ -16,4 +16,4 @@ COPY --from=build /app/dist ./dist
 
 EXPOSE 8080
 
-CMD npm run start
+CMD node server.js
