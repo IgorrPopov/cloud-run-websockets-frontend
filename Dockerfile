@@ -11,5 +11,9 @@ FROM node:14.18-alpine
 WORKDIR /app
 COPY package.json .
 RUN npm i --only-production
+
 COPY --from=build /app/dist ./dist
+
+EXPOSE 8080
+
 CMD npm run start
