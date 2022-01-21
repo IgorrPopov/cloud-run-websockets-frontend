@@ -37,6 +37,16 @@ class AppComponent {
         'background: #90ee90; color: black; font-size: 16px'
       );
     });
+
+    this.chatService.getNewMessage().subscribe((userId: string) => {
+      const message = `=> User has left the session! %c (id: ${userId})`;
+
+      console.log(
+        `%c ${message}`, 
+        'background: #90ee90; color: white; font-size: 16px', 
+        'background: #90ee90; color: black; font-size: 16px'
+      );
+    });
   }
 }
 

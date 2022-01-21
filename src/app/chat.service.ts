@@ -20,4 +20,8 @@ export class ChatService {
   getNewMessage(): Observable<string> {
     return this.socket.fromEvent('newMessage');
   }
+
+  userLeft(): Observable<string> {
+    return this.socket.fromEvent('userLeft');
+  }
 }
