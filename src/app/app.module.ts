@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
 import { ChatService } from './chat.service';
 
 const config: any = { 
-  // url: 'https://test-app-kbsq3z36sa-uc.a.run.app/', 
-  url: 'http://localhost:3000', 
+  url: 'https://test-app-kbsq3z36sa-uc.a.run.app/', 
+  // url: 'http://localhost:3000', 
   options: { 
     query: { 
       userId: uuidv4(),
