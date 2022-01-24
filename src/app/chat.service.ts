@@ -6,12 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ChatService {
-
-  constructor(private socket: Socket) {
-    // this.socket.on('connection', () => {
-
-    // });
-  }
+  constructor(private socket: Socket) {}
 
   sendMessage(message: string): void {
     this.socket.emit('message', message);

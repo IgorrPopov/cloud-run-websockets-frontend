@@ -1,12 +1,13 @@
 import { v4 as uuidv4 } from 'uuid';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
+import { SocketIoModule } from 'ngx-socket-io';
 import { Component } from '@angular/core';
 import { ChatService } from './chat.service';
 
 const config: any = { 
-  url: 'https://test-app-kbsq3z36sa-uc.a.run.app/', 
+  // url: 'https://test-app-kbsq3z36sa-uc.a.run.app/', 
+  url: 'http://localhost:3000', 
   options: { 
     query: { 
       userId: uuidv4(),
